@@ -7,16 +7,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 
-namespace RealityToolkit.UPMTEMPLATE
+namespace RealityToolkit.package_test
 {
     /// <summary>
-    /// Used by the toolkit to signal that a feature is available on the UPMTEMPLATE platform.
+    /// Used by the toolkit to signal that a feature is available on the package_test platform.
     /// </summary>
-    [System.Runtime.InteropServices.Guid("UPMTEMPLATEGUID")]
-    public class UPMTEMPLATEPlatform : BasePlatform
+    [System.Runtime.InteropServices.Guid("95cf22c8-068a-4d1a-825f-e6c32087ec16")]
+    public class package_testPlatform : BasePlatform
     {
-        private const string xrDisplaySubsystemDescriptorId = "UPMTEMPLATE Display";
-        private const string xrInputSubsystemDescriptorId = "UPMTEMPLATE Input";
+        private const string xrDisplaySubsystemDescriptorId = "package_test Display";
+        private const string xrInputSubsystemDescriptorId = "package_test Input";
 
         /// <inheritdoc />
         public override IPlatform[] PlatformOverrides { get; } =
@@ -28,7 +28,7 @@ namespace RealityToolkit.UPMTEMPLATE
 		Choose a path for Is Platform available at runtime
         /// <inheritdoc />
         public override bool IsAvailable =>
-            !Application.isEditor && UPMTEMPLATEApi.Version > NoVersion && UPMTEMPLATEApi.Initialized;		
+            !Application.isEditor && package_testApi.Version > NoVersion && package_testApi.Initialized;		
 */
         /// <inheritdoc />
         public override bool IsAvailable
