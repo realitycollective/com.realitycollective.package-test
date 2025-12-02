@@ -78,7 +78,7 @@ jobs:
           project-name: P
 
       - name: Setup Unity UPM Build
-        uses: realitycollective/reality-collective-actions/setupUnityUPMbuild@v1
+        uses: realitycollective/reality-collective-actions/setup-unity-upm-build@v1
         with:
           unity-project-path: ${{ steps.create-unity-project.outputs.project-path }}
           dependencies: '[{"development": "github.com/realitycollective/com.realitycollective.buildtools.git"},{"development": "github.com/realitycollective/com.realitytoolkit.core.git"},{"development": "github.com/realitycollective/com.realitycollective.utilities.git"},{"development": "github.com/realitycollective/com.realitycollective.service-framework.git"}]'
